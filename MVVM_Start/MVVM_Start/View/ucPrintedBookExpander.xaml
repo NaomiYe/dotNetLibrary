@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="MVVM_Start.View.ucPrintedBookExpander"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MVVM_Start.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="Advanced information:" Margin="0,10" FontWeight="Bold" HorizontalAlignment="Center"/>
+        <Label Grid.Row="1" Content="Number of book copies:"/>
+        <Label Grid.Row="2" Content="{Binding NumOfCopied}" Margin="20,0,0,10"/>
+        <Label Grid.Row="3" Content="Weight of book (kg):"/>
+        <Label Grid.Row="4" Content="{Binding BookWeight}" Margin="20,0,0,10"/>
+        <Label Grid.Row="5" Content="Is book avilable?"/>
+        <Label Grid.Row="6" Content="{Binding IsAvilable}" Margin="20,0,0,10"/>
+    </Grid>
+</UserControl>
